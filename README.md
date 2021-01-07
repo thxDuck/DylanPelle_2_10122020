@@ -25,6 +25,16 @@ OpenClassroom, Front-end developper courses, project 2 :
 - Validation to Html anc CSS W3C validator
 - version the code 
 
+
+## Tips 
+
+- For the border -> 
+
+
+## Time passed
+
+- 10/12/2020 --> 4h, have structured HTML, search bar created
+
 ---
 ---
 <br/><br/>

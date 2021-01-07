@@ -1,13 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia | Accueil</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0481fe509.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/ressources/style/style.css" />
 </head>
+
 <body>
+    <div class="main">
+        <header class="flex just-between">
+            <div class="logo">
+                <img src="ressources/pictures/logo/Reservia@3x.png" alt="logo reservia">
+            </div>
+            <nav class="flex just-between">
+                <div class="nav-item"><a href="#lodging" class="nav-link">Hébergements</a></div>
+                <div class="nav-item"><a href="#activities" class="nav-link">Activités</a></div>
+                <div class="nav-item"><a href="#" id="sign-in" class="nav-link">S'inscrire</a></div>
+            </nav>
+        </header>
+
+        <section id="search">
+            <div id="search-city">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En pleine ville ou en pleine nature</p>
+                <div id="search-bar">
+                    <div class="local-icon flex"><i class="fas fa-map-marker-alt item-search"></i></div>
+                    <input type="search" class="item-search" name="city" id="city">
+                    <button type="submit" class="item-search" id="search-input">Rechercher</button>
+                </div>
+
+            </div>
+
+            <div id="filter" class="flex">
+
+                <h3>Filtres</h3> <!-- Title up and icons after on mobile view-->
+
+                <div class="flex flex-wrap">
+                    <div class="f-item flex">
+                        <div class="f-icon flex"><i class="fas fa-money-bill-wave f-i"></i></div>
+                        <span class="f-text">Économique</span>
+                    </div>
+
+                    <div class="f-item flex">
+                        <div class="f-icon flex"><i class="fas fa-child f-i"></i></div>
+                        <span class="f-text">Familial</span>
+                    </div>
+
+                    <div class="f-item flex">
+                        <div class="f-icon flex"><i class="fas fa-heart f-i"></i></div>
+                        <span class="f-text">Romantique</span>
+                    </div>
+
+                    <div class="f-item flex">
+                        <div class="f-icon flex"><i class="fas fa-dog f-i"></i></div>
+                        <span class="f-text">Annimaux autotisés</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex" id="info"><i class="fas fa-info f-i"></i></div>
+                <span class="flex" id="info-text">Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
 
 
+        </section>
+
+
+
+        <section class="flex flex-wrap">
+
+            <div id="lodging" class="bg-gray rounded-border">
+                <div id="title-lodg">
+                    <h2>Hébergements à Marseille</h2>
+                </div>
+
+                <div class="it-lodg">
+                    <!-- LODGING-->
+                    <div class="flex flex-wrap">
+                        <!-- 3 lodging row-->
+
+
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg-img bg-img" id="img-marcus"></div>
+                            <div class="c-lodg-text flex col">
+                                <h3>Auberge de la Cannebière</h3>
+                                <span>Nuits a partir de <strong>25€</strong></span>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg-img bg-img" id="img-fred"></div>
+                            <div class="c-lodg-text flex col">
+                                <h3>Hôtel du port</h3>
+                                <span>Nuits a partir de <strong>52€</strong></span>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg-img bg-img" id="img-reisetopia"></div>
+                            <div class="c-lodg-text flex col">
+                                <h3>Hôtel Les mouettes</h3>
+                                <span>Nuits a partir de <strong>76€</strong></span>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--./row-->
+
+                    <div class="flex flex-wrap">
+                        <!-- 3 lodging row-->
+
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg-img bg-img" id="img-annie"></div>
+                            <div class="c-lodg-text flex col">
+                                <h3>Hôtel de la mer</h3>
+                                <span>Nuits a partir de <strong>46€</strong></span>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg-img bg-img" id="img-nicate"></div>
+                            <div class="c-lodg-text flex col">
+                                <h3>Auberge le Panier</h3>
+                                <span>Nuits a partir de <strong>23€</strong></span>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg-img bg-img" id="img-amina"></div>
+                            <div class="c-lodg-text flex col">
+                                <h3>Hotel chez Amina</h3>
+                                <span>Nuits a partir de <strong>96€</strong></span>
+                            </div>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="popular" class="bg-gray rounded-border">
+                <div id="title-pop">
+                    <h2 class="flex just-between">Les plus populaires<i class="fas fa-chart-line"></i></h2>
+                </div>
+
+
+                <div class="it-pop">
+                    <!-- POPULAR-->
+                    <div class="flex col">
+                        <!-- pop cols-->
+
+
+                        <div class="c-pop rounded-border bg-white flex">
+                            <div class="c-pop-img" id="img-emilie"></div>
+                            <div class="c-pop-text flex col just-between">
+                                <div class="top flex col">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <span>Nuits a partir de <strong>128€</strong></span>
+                                </div>
+                                <div class="bot">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="c-pop rounded-border bg-white flex">
+                            <div class="c-pop-img" id="img-aw"></div>
+                            <div class="c-pop-text flex col just-between">
+                                <div class="top flex col">
+                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                    <span>Nuits a partir de <strong>71€</strong></span>
+                                </div>
+                                <div class="bot">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="c-pop rounded-border bg-white flex">
+                            <div class="c-pop-img" id="img-febiran-sj"></div>
+                            <div class="c-pop-text flex col just-between">
+                                <div class="top flex col">
+                                    <h3>Hôtel Tout bleu et Blanc</h3>
+                                    <span>Nuits a partir de <strong>68€</strong></span>
+                                </div>
+                                <div class="bot">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="flex flex-wrap">
+            <h2>Activités à Marseilles</h2>
+
+
+            <div class="it-act">
+                <!-- LODGING-->
+                <div class="flex flex-wrap">
+                    <!-- 3 lodging row-->
+
+
+
+                    <!-- 
+    Travailler sur les colonnes, et les hauteurs de cartes
+ -->
+
+
+
+
+                    <div class="col">
+                        <!-- 1 item Large-->
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-act-img bg-img" id="img-marcus"></div>
+                            <div class="c-act-text flex col">
+                                <h3>Vieux Port</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <!-- 2 item Large-->
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-act-img bg-img" id="img-marcus"></div>
+                            <div class="c-act-text flex col">
+                                <h3>Vieux Port</h3>
+                            </div>
+                        </div>
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-act-img bg-img" id="img-marcus"></div>
+                            <div class="c-act-text flex col">
+                                <h3>Vieux Port</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <!-- 1 item Large-->
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-act-img bg-img" id="img-marcus"></div>
+                            <div class="c-act-text flex col">
+                                <h3>Vieux Port</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <!-- One item Large-->
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-act-img bg-img" id="img-marcus"></div>
+                            <div class="c-act-text flex col">
+                                <h3>Vieux Port</h3>
+                            </div>
+                        </div>
+                        <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-act-img bg-img" id="img-marcus"></div>
+                            <div class="c-act-text flex col">
+                                <h3>Vieux Port</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <footer class="bg-gray">
+            <div id="about">
+                <h4></h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="ourLodging">
+                <h4></h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="help">
+                <h4></h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
 </body>
+
 </html>

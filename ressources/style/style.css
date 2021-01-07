@@ -1,0 +1,365 @@
+
+/* Global */
+* {
+    /* font-size: 1rem; */
+    font-family: 'Raleway', 'Arial Black', Arial, Verdana, sans-serif;
+}
+h1 {
+    font-size: 1.2rem;
+}
+h2 {
+    font-size: 1.3rem;
+}
+h3 {
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+strong {
+    font-size: bolder;
+}
+.main {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.bg-gray {
+    background-color: #F2F2F2;
+}
+.rounded-border {
+    border: 0px solid #F2F2F2;
+    border-radius: 25px;
+}
+/* Background images */
+
+/* LODGING IMAGE */
+#img-marcus {
+    background: url('/ressources/pictures/lodging/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+    background-position: center;
+    background-size: cover
+}
+#img-fred {
+    background: url('/ressources/pictures/lodging/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+    background-position: center;
+    background-size: cover
+}
+#img-reisetopia {
+    background: url('/ressources/pictures/lodging/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+    background-position: center;
+    background-size: cover
+}
+#img-annie {
+    background: url('/ressources/pictures/lodging/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+    background-position: center;
+    background-size: cover
+}
+#img-nicate {
+    background: url('/ressources/pictures/lodging/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+    background-position: center;
+    background-size: cover
+}
+#img-amina {
+    background: url('/ressources/pictures/lodging/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+    background-position: center;
+    background-size: cover
+}
+
+/* POPULAR IMAGE */
+#img-emilie {
+    background: url('/ressources/pictures/lodging/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+    background-position: center;
+    background-size: cover
+}
+#img-aw {
+    background: url('/ressources/pictures/lodging/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg');
+    background-position: center;
+    background-size: cover
+}
+#img-febiran-sj {
+    background: url('/ressources/pictures/lodging/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+    background-position: center;
+    background-size: cover
+    
+}
+
+
+.bg-white {
+    background-color:white;
+}
+
+/* Header */
+.logo {
+    font-size: 1.5rem;;
+}
+
+nav {
+    width: 550px;
+    flex-wrap: wrap;
+
+}
+.nav-item {
+    height: 70%;
+    width: 33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+  
+    border-top: 5px solid #ffffff;
+}
+.nav-item:hover{
+    border-top: 5px solid #0065FC;
+    color: #0065FC; 
+}
+#sign-in {
+    color: #0065FC; 
+}
+.nav-link {
+    font-size: 1.3rem;
+    color: #535353;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.nav-link:hover {
+    color: #0065FC; 
+
+}
+
+        /* Items  */
+/* Search bar*/
+
+#search-bar {
+    display: flex;
+    background-color: #F2F2F2;
+    justify-content: space-between;
+    height: 55px;
+    width: 500px;
+    border: 3px solid #F2F2F2;
+    border-radius: 20px;
+}
+.fa-map-marker-alt {
+    margin:auto; 
+    font-size: 1.4rem;
+    
+}
+.local-icon {
+    flex: 7;
+    width: 55px;
+    padding-left: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+
+}
+.item-search {
+    height: 100%;
+    margin: auto;
+}
+.search-bar, input
+{
+    flex: 80;
+    border: none;
+    padding-left: 10px;
+
+}
+.search-bar, button {
+    flex:13;
+    background-color: #0065FC;
+    border: 3px solid #1C6EA4;
+    border-radius: 0px 20px 20px 0px;;
+    color : white;
+    font-size: 1rem;
+
+    font-weight: bold;
+}
+/* Filter Items */
+
+#filter {
+    flex-wrap: wrap;
+    max-width: 60%;
+    align-items: center;
+}
+
+.f-item {
+    font-weight: bolder;
+    align-items: center;
+    text-align: center;
+
+    height: 40px;
+    width: fit-content;
+
+    padding-right: 15px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: 1px solid #aaaaaa;
+    border-radius: 40px;
+}
+.f-icon {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.1px;
+
+    height: 40px;
+    width: 40px;
+    
+    color: #0065FC;
+    background-color: #DEEBFF;
+
+    border: 1px #aaaaaa;
+    border-radius: 40px;
+}
+.f-text {
+    margin-left:15px;
+}
+#info {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.1px;
+
+    height: 30px;
+    width: 30px;
+    
+    color: #0065FC;
+    /* background-color: #DEEBFF; */
+
+    border: 1px solid #aaaaaa;
+    border-radius: 40px;
+}
+#info-text {    
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    text-align: center;
+}
+
+    /* Cards */
+/* LODGING  */
+.c-lodg {
+    width: 250px;
+    margin: 25px;
+    padding: 5px;
+    padding-bottom: 10px;
+
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21); 
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21);
+}
+.c-lodg-text {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.c-lodg-img {
+    background-size: contain;
+    height: 145px;
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.rating {
+    font-size: 0.8rem;
+    margin: 10px;
+    color:#dadada
+}
+.checked{
+    color: #0065FC;
+}
+
+#lodging {
+    padding:20px;
+    width: fit-content;
+    margin: 25px;
+}
+
+/* Horizontal cards */
+
+/* POPULAR */
+.c-pop {
+    width: 300px;
+    margin: 25px;
+    padding: 5px;
+    padding-bottom: 10px;
+
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21); 
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21);
+}
+.c-pop-text {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.c-pop-img {
+    background-size: contain;
+    width: 40%;
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.c-pop {
+    background-size: contain;
+    height: 145px;
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+
+#popular {
+    padding:20px;
+    /* width: fit-content; */
+    margin: 25px;
+}
+
+.bot > .rating{
+    margin-left: 0px;
+    justify-self: center;
+}
+.fa-chart-line {
+    align-self: center;
+}
+
+/* ACTIVITIES */
+
+#activities {
+    padding:20px;
+    margin: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    margin-top: 500px;
+}
+
+/* FlexBox */
+.flex {
+    display: flex;
+}
+.col {
+   flex-direction: column;
+}
+
+.just-between {
+    justify-content: space-between;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+/* .oder-1{
+    order: 1;
+}
+.oder-2 {
+    order: 2;
+}
+.order-last {
+    order: 999;
+} */
