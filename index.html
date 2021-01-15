@@ -26,7 +26,8 @@
                 <div class="space"></div>
                 <div class="nav-item sec-row"><a href="#lodging" class="nav-link">Hébergements</a></div>
                 <div class="nav-item sec-row"><a href="#activities" class="nav-link">Activités</a></div>
-                <div class="nav-item" id="sign-in"><a href="#" class="nav-link"><strong class="color-blue">S'inscrire</strong></a></div>
+                <div class="nav-item" id="sign-in"><a href="#" class="nav-link"><strong
+                            class="color-blue">S'inscrire</strong></a></div>
             </nav>
 
         </header>
@@ -47,7 +48,7 @@
 
                 <h3>Filtres</h3> <!-- Title up and icons after on mobile view-->
 
-                <div class="flex flex-wrap">
+                <div class="flex flex-wrap" id="group-filter">
                     <div class="f-item flex">
                         <div class="f-icon flex"><i class="fas fa-money-bill-wave f-i"></i></div>
                         <span class="f-text">Économique</span>
@@ -89,11 +90,11 @@
 
                     <div class="it-lodg">
                         <!-- LODGING-->
-                        <div class="flex row-lodg mbot" >
+                        <div class="flex row-lodg mbot">
                             <!-- 3 lodging row-->
 
 
-                            <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-marcus"></div>
                                 <div class="c-lodg-text flex col">
                                     <h3>Auberge de la Cannebière</h3>
@@ -108,7 +109,7 @@
                                 </div>
                             </div>
 
-                            <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-fred"></div>
                                 <div class="c-lodg-text flex col">
                                     <h3>Hôtel du port</h3>
@@ -124,7 +125,7 @@
                             </div>
 
 
-                            <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-reisetopia"></div>
                                 <div class="c-lodg-text flex col">
                                     <h3>Hôtel Les mouettes</h3>
@@ -146,7 +147,7 @@
                         <div class="flex row-lodg mbot">
                             <!-- 3 lodging row-->
 
-                            <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-annie">
                                 </div>
                                 <div class="c-lodg-text flex col">
@@ -162,7 +163,7 @@
                                 </div>
                             </div>
 
-                            <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-nicate"></div>
                                 <div class="c-lodg-text flex col">
                                     <h3>Auberge le Panier</h3>
@@ -177,7 +178,7 @@
                                 </div>
                             </div>
 
-                            <div class="c-lodg rounded-border bg-white flex col">
+                            <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-amina"></div>
                                 <div class="c-lodg-text flex col">
                                     <h3>Hotel chez Amina</h3>
@@ -204,95 +205,95 @@
                     </div>
 
 
-                    <div class="it-pop">
-                        <!-- POPULAR-->
-                        <div class="flex col">
-                            <!-- pop cols-->
+                    <!-- POPULAR-->
+                    <div class="it-pop flex col">
+                        <!-- pop cols-->
 
 
-                            <div class="c-pop rounded-border bg-white flex">
-                                <div class="c-pop-img" id="img-emilie"></div>
-                                <div class="c-pop-text flex col justify-between">
-                                    <div class="top flex col">
-                                        <h3>Hôtel Le soleil du matin</h3>
-                                        <span>Nuits a partir de <strong>128€</strong></span>
-                                    </div>
-                                    <div class="bot">
-                                        <div class="rating">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                        </div>
+                        <div class="c-pop rounded-border bg-white flex">
+                            <div class="c-pop-img" id="img-emilie"></div>
+                            <div class="c-pop-text flex col justify-between">
+                                <div class="top flex col">
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <span>Nuits a partir de <strong>128€</strong></span>
+                                </div>
+                                <div class="bot">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="c-pop rounded-border bg-white flex">
-                                <div class="c-pop-img" id="img-aw"></div>
-                                <div class="c-pop-text flex col justify-between">
-                                    <div class="top flex col">
-                                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                                        <span>Nuits a partir de <strong>71€</strong></span>
-                                    </div>
-                                    <div class="bot">
-                                        <div class="rating">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="c-pop rounded-border bg-white flex">
-                                <div class="c-pop-img" id="img-febiran-sj"></div>
-                                <div class="c-pop-text flex col justify-between">
-                                    <div class="top flex col">
-                                        <h3>Hôtel Tout bleu et Blanc</h3>
-                                        <span>Nuits a partir de <strong>68€</strong></span>
-                                    </div>
-                                    <div class="bot">
-                                        <div class="rating">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
                         </div>
+
+                        <div class="c-pop rounded-border bg-white flex">
+                            <div class="c-pop-img" id="img-aw"></div>
+                            <div class="c-pop-text flex col justify-between">
+                                <div class="top flex col">
+                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                    <span>Nuits a partir de <strong>71€</strong></span>
+                                </div>
+                                <div class="bot">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="c-pop rounded-border bg-white flex">
+                            <div class="c-pop-img" id="img-febiran-sj"></div>
+                            <div class="c-pop-text flex col justify-between">
+                                <div class="top flex col">
+                                    <h3>Hôtel Tout bleu et Blanc</h3>
+                                    <span>Nuits a partir de <strong>68€</strong></span>
+                                </div>
+                                <div class="bot">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
 
             </section>
 
-            <section class="flex col flex-wrap justify-around">
+            <section id="activities-section" class="flex col flex-wrap justify-around">
                 <h2>Activités à Marseilles</h2>
-                <!-- MAIN ROW !! DISPLAY COL ON 1270px larg screen ---- -->
+                <!-- MAIN ROW !! DISPLAY COL ON 1270px larg screen  -->
                 <div id="activities" class="flex flex-wrap justify-between">
                     <!-- md-colums-->
 
 
                     <!--CONTAINER 1 WITH 3 ITEM INSIDE-->
-                    <div class="flex flex-wrap container justify-around" id="containerAct1">
+                    <div class="flex" id="containerAct1">
 
                         <div class="flex col container">
                             <!-- CONTAINER WITH LARGE ITEM-->
+
                             <div class="c-act rounded-border bg-white flex col">
                                 <div class="c-act-img bg-img" id="img-reno"></div>
                                 <div class="c-act-text flex col">
                                     <h3>Vieux Port</h3>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="flex col container">
@@ -310,11 +311,12 @@
                                     <h3>Îles du Frioul</h3>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
                     <!--CONTAINER 2 WITH 3 ITEM INSIDE-->
-                    <div class="flex flex-wrap container" id="containerAct2">
+                    <div class="flex" id="containerAct2">
 
                         <div class="flex col container">
                             <!-- CONTAINER WITH LARGE ITEM-->
@@ -334,6 +336,7 @@
                                     <h3>Notre-Dame-de-la-Garde</h3>
                                 </div>
                             </div>
+
                             <div class="c-act rounded-border bg-white flex col">
                                 <div class="c-act-img bg-img" id="img-lena"></div>
                                 <div class="c-act-text flex col">

@@ -293,14 +293,7 @@ nav {
 }
 
 
-/* .v-img {
-    max-width: 100%;
-    width:100%;
-    height:350px;
-    max-height: 145px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-} */
+
 #lodging {
     padding:20px;
     width: 65%;
@@ -354,7 +347,7 @@ nav {
     /* margin: 15px; */
 }
 .c-pop {
-    width: 300px;
+    min-width: 300px;
     margin: 25px;
     padding: 5px;
     padding-bottom: 10px;
@@ -394,8 +387,11 @@ nav {
 
 /* ACTIVITIES */
 
+
+
 #activities {
-    /* width: 100%; */
+    justify-content: space-between;
+    flex-wrap: wrap;
     min-height: 500px; 
     padding: 0px;
 }
@@ -493,13 +489,20 @@ footer {
 
 @media screen and (max-width: 1280px) /* Tab */
 {
-    section {
+    #search {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } 
+    #lodg-pop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
     .main {
         max-width: 1280px;
+        width: 100%;
+        /* min-width: 550px; */
         margin: auto;
     }
 
@@ -515,7 +518,7 @@ footer {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        width: 65%;
+        /* width: 90%; */
         
     }
     .nav-item {
@@ -551,31 +554,65 @@ footer {
     .sec-row {
         width: 50%;
     }
-    
+    /* SEARCH  */
+    #search-city {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 95%;
+    }
 
     /* Section */ 
     #popular {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
         order: 0;
-        margin: 15px;
-        width: auto;
-        
+    }
+    .it-pop {
+        width: 100%;
+        align-items: center;
+    }
+    .c-pop {
+        width: 75%;
     }
     #lodging {
         order: 99;
         margin: 15px;
         width: 85%;
     }
+    .row-lodg {
+        display: flex;
+        align-items: center;
+    }
+    .c-lodg {
+        width: 30%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+
+
+
 
     #activities {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 66%;
+
+        /* width: 66%; */
+    }
+    #activities-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #containerAct1 {
        width:66%;   /* 640 = 1280/2  */
        height: 450px;
        margin: auto;
+       flex-wrap: nowrap;
     }
     
     #containerAct2 {
@@ -594,14 +631,92 @@ footer {
 } /* END MEDIA TAB*/
 
 
-@media screen and (max-width: 768px) {/* mobile */
+@media screen and (max-width: 640px) {  /* mobile */
 
+  .main {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    #search {
+       align-items: flex-start;
+       padding: 10px;
+    }
+    #filter {
+       
+        max-width: 90%;
+    }
+    #group-filter {
+        flex-direction: row;
+        width: 100%
+    }
     .row-lodg {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
+    /* .row-lodg {
+        display: flex;
+        flex-direction: column;
+    } */
     .c-lodg {
-        width: 75%;
+        width: 100%;
         margin: auto;
+        margin-bottom: 25px;
     }
+    /* .rounded-border {
+        width: auto;
+    } */
+  
+    #popular {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin: 0px;
+        padding: 0px; 
+        border-radius: 0px;
+    }
+    #title-pop {
+        width: 90%;
+    }
+    .c-pop {
+        width: 85%;
+    }
+
+    #lodging {
+        background-color: white;
+    }
+
+    #activities-section {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    #containerAct1{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    #containerAct2{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    #activities {
+        height: 100%;
+    }
+    .c-act {
+        height: 200px;
+        width: 85%;
+    }
+   
+    .container {
+        width: 90%;
+        margin: auto;
+        justify-content: flex-start;
+        
+    }
+
+
 }
