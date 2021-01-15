@@ -121,21 +121,33 @@ body {
 }
 
 /* Header */
-
+/* header {
+    max-width: 100%;
+} */
 nav {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 33%;
+    justify-content: flex-end;
+    width:100%;
+}
+.logo {
+    display: flex;
+    align-self:left;
+    width: 10%;
+
+
+}
+.space {
+    flex: 99;
 }
 .nav-item {
-    height: 70%;
-    width: 33%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: space-around;
+    align-self: flex-end;
+
+    height: 75px;
+    width: 15%;
   
     border-top: 2px solid #ffffff;
 }
@@ -143,8 +155,8 @@ nav {
     border-top: 2px solid #0065FC;
     color: #0065FC; 
 }
-#sign-in {
-    color: #0065FC; 
+.color-blue {
+    color: #0065FC;
 }
 .nav-link {
     font-size: 1.1rem;
@@ -212,6 +224,7 @@ nav {
     flex-wrap: wrap;
     max-width: 60%;
     align-items: center;
+    margin-bottom: 15px;
 }
 .f-item {
     font-weight: bolder;
@@ -272,8 +285,12 @@ nav {
 
 #lodg-pop {
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
 }
-
+.row-lodg {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 
 /* .v-img {
@@ -379,19 +396,21 @@ nav {
 
 #activities {
     /* width: 100%; */
-    height: 500px;
+    min-height: 500px; 
     padding: 0px;
 }
 #containerAct1 {
     margin-left: -20px;
+    min-width: 640px; /* 640 = 1280/2 */
 }
 
 #containerAct2 {
     margin-right: -25px;
+    min-width: 640px;
 }
 
 .c-act {
-    width: 85%; /* for display 3 cards on min 1280px larg screen*/
+    width: 75%; /* for display 3 cards on min 1280px larg screen*/
     height: 100%;
     margin: 20px;
     padding: 5px;
@@ -474,11 +493,115 @@ footer {
 
 @media screen and (max-width: 1280px) /* Tab */
 {
-    a {
-      color: red;  
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: auto;
     }
     nav {
         display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 65%;
+        
+    }
+    .nav-item {
+        width: fit-content;
+        order: 100;
+        height: 50px;
+        margin-top: 25px;
+        border-top: none;
+        border-bottom: 3px solid #dadada;
+    }
+    .nav-item:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC; 
+    }
+    
+    .nav-item:last-child {
+        order: 1;
+        
+    }
+    .space {
+        display: none;
+    }
+    .logo{
+        width: 26%;
+    }
+    #sign-in {
+        width: 26%;
+        order: 1;
+        border-bottom: none;
+
+    }
+    .sec-row {
+        width: 50%;
+    }
+    
+
+    /* Section */ 
+    #popular {
+        order: 0;
+        margin: 15px;
+        width: auto;
+        
+    }
+    #lodging {
+        order: 99;
+        margin: 15px;
+        width: 85%;
+    }
+
+    #activities {
+        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        width: 66%;
+    }
+    #containerAct1 {
+       width:66%;   /* 640 = 1280/2  */
+       height: 450px;
+       margin: auto;
+    }
+    
+    #containerAct2 {
+        width:66%;
+        height: 450px;
+        margin: auto;
+    }
+    
+    /* footer */
+
+    #footer-container {
+        display:flex;
+        flex-direction:column
+    }
+    
+} /* END MEDIA TAB*/
+
+
+@media screen and (max-width: 768px) {/* mobile */
+
+    .row-lodg {
+        display: flex;
+        flex-direction: column;
+    }
+    .c-lodg {
+        width: 75%;
+        margin: auto;
     }
 }

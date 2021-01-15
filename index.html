@@ -9,20 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d0481fe509.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/ressources/style/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="/ressources/style/style.css" /> -->
 </head>
 
 <body>
     <div class="main">
-        <header class="flex justify-between">
-            <div>
-                <img class="logo" src="ressources/pictures/logo/Reservia.svg" alt="logo reservia">
-            </div>
-            <nav class="flex justify-between">
-                <div class="nav-item"><a href="#lodging" class="nav-link">Hébergements</a></div>
-                <div class="nav-item"><a href="#activities" class="nav-link">Activités</a></div>
-                <div class="nav-item"><a href="#" id="sign-in" class="nav-link">S'inscrire</a></div>
+
+
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="ressources/pictures/logo/Reservia.svg" alt="logo reservia">
+                </div>
+                <div class="space"></div>
+                <div class="nav-item sec-row"><a href="#lodging" class="nav-link">Hébergements</a></div>
+                <div class="nav-item sec-row"><a href="#activities" class="nav-link">Activités</a></div>
+                <div class="nav-item" id="sign-in"><a href="#" class="nav-link"><strong class="color-blue">S'inscrire</strong></a></div>
             </nav>
+
         </header>
 
         <section id="search">
@@ -63,15 +69,18 @@
                     </div>
                 </div>
             </div>
-            <div class="flex">
+            <div class="flex mbot">
                 <div class="flex" id="info"><i class="fas fa-info f-i"></i></div>
                 <span class="flex" id="info-text">Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
         </section>
 
+
+
+
         <div id="allContent" class="flex col">
 
-            <section id="lodg-pop" class="flex flex-wrap justify-around">
+            <section id="lodg-pop" class="flex justify-around">
 
                 <div id="lodging" class="bg-gray rounded-border">
                     <div id="title-lodg">
@@ -80,7 +89,7 @@
 
                     <div class="it-lodg">
                         <!-- LODGING-->
-                        <div class="flex flex-wrap justify-around mbot">
+                        <div class="flex row-lodg mbot" >
                             <!-- 3 lodging row-->
 
 
@@ -134,7 +143,7 @@
                         </div>
                         <!--./row-->
 
-                        <div class="flex flex-wrap justify-around">
+                        <div class="flex row-lodg mbot">
                             <!-- 3 lodging row-->
 
                             <div class="c-lodg rounded-border bg-white flex col">
@@ -187,8 +196,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
 
                 <div id="popular" class="bg-gray rounded-border">
@@ -265,105 +272,114 @@
                         </div>
                     </div>
                 </div>
+
             </section>
 
             <section class="flex col flex-wrap justify-around">
                 <h2>Activités à Marseilles</h2>
-                    <!-- MAIN ROW !! DISPLAY COL ON 1270px larg screen ---- -->
-                    <div id="activities" class="flex flex-wrap justify-between"> <!-- md-colums-->
+                <!-- MAIN ROW !! DISPLAY COL ON 1270px larg screen ---- -->
+                <div id="activities" class="flex flex-wrap justify-between">
+                    <!-- md-colums-->
 
 
-                        <!--CONTAINER 1 WITH 3 ITEM INSIDE-->
-                        <div class="flex flex-wrap container justify-around">
+                    <!--CONTAINER 1 WITH 3 ITEM INSIDE-->
+                    <div class="flex flex-wrap container justify-around" id="containerAct1">
 
-                            <div class="flex col container">
-                                <!-- CONTAINER WITH LARGE ITEM-->
-                                <div class="c-act rounded-border bg-white flex col">
-                                    <div class="c-act-img bg-img" id="img-reno"></div>
-                                    <div class="c-act-text flex col">
-                                        <h3>Vieux Port</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex col container">
-                                <!-- CONTAINER WITH 2 HALF ITEM-->
-                                <div class="c-act rounded-border bg-white flex col">
-                                    <div class="c-act-img bg-img" id="img-paul"></div>
-                                    <div class="c-act-text flex col">
-                                        <h3>Fort de Pomègues</h3>
-                                    </div>
-                                </div>
-
-                                <div class="c-act rounded-border bg-white flex col">
-                                    <div class="c-act-img bg-img" id="img-kevin"></div>
-                                    <div class="c-act-text flex col">
-                                        <h3>Îles du Frioul</h3>
-                                    </div>
+                        <div class="flex col container">
+                            <!-- CONTAINER WITH LARGE ITEM-->
+                            <div class="c-act rounded-border bg-white flex col">
+                                <div class="c-act-img bg-img" id="img-reno"></div>
+                                <div class="c-act-text flex col">
+                                    <h3>Vieux Port</h3>
                                 </div>
                             </div>
                         </div>
 
-                        <!--CONTAINER 2 WITH 3 ITEM INSIDE-->
-                        <div class="flex flex-wrap container">
-
-                            <div class="flex col container">
-                                <!-- CONTAINER WITH LARGE ITEM-->
-                                <div class="c-act rounded-border bg-white flex col">
-                                    <div class="c-act-img bg-img" id="img-kilyan"></div>
-                                    <div class="c-act-text flex col">
-                                        <h3>Parc National des Calanques</h3>
-                                    </div>
+                        <div class="flex col container">
+                            <!-- CONTAINER WITH 2 HALF ITEM-->
+                            <div class="c-act rounded-border bg-white flex col">
+                                <div class="c-act-img bg-img" id="img-paul"></div>
+                                <div class="c-act-text flex col">
+                                    <h3>Fort de Pomègues</h3>
                                 </div>
                             </div>
 
-                            <div class="flex col container">
-                                <!-- CONTAINER WITH 2 HALF ITEM-->
-                                <div class="c-act rounded-border bg-white flex col">
-                                    <div class="c-act-img bg-img" id="img-florian"></div>
-                                    <div class="c-act-text flex col">
-                                        <h3>Notre-Dame-de-la-Garde</h3>
-                                    </div>
+                            <div class="c-act rounded-border bg-white flex col">
+                                <div class="c-act-img bg-img" id="img-kevin"></div>
+                                <div class="c-act-text flex col">
+                                    <h3>Îles du Frioul</h3>
                                 </div>
-                                <div class="c-act rounded-border bg-white flex col">
-                                    <div class="c-act-img bg-img" id="img-lena"></div>
-                                    <div class="c-act-text flex col">
-                                        <h3>Parc Longchamp</h3>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!--CONTAINER 2 WITH 3 ITEM INSIDE-->
+                    <div class="flex flex-wrap container" id="containerAct2">
+
+                        <div class="flex col container">
+                            <!-- CONTAINER WITH LARGE ITEM-->
+                            <div class="c-act rounded-border bg-white flex col">
+                                <div class="c-act-img bg-img" id="img-kilyan"></div>
+                                <div class="c-act-text flex col">
+                                    <h3>Parc National des Calanques</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex col container">
+                            <!-- CONTAINER WITH 2 HALF ITEM-->
+                            <div class="c-act rounded-border bg-white flex col">
+                                <div class="c-act-img bg-img" id="img-florian"></div>
+                                <div class="c-act-text flex col">
+                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                </div>
+                            </div>
+                            <div class="c-act rounded-border bg-white flex col">
+                                <div class="c-act-img bg-img" id="img-lena"></div>
+                                <div class="c-act-text flex col">
+                                    <h3>Parc Longchamp</h3>
+                                </div>
                             </div>
 
                         </div>
 
                     </div>
+
+                </div>
             </section>
 
         </div>
 
         <footer class="bg-gray">
-            <div id="about">
-                <h4></h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+
+            <div id="footer-container" class="flex justify-between flex-wrap">
+                <!-- flex col on mobile-->
+                <div id="about" class="foot-item">
+                    <h4>A propos</h4>
+
+                    <p><a href="#foot" class="link-default">Fonctionnement du site</a></p>
+                    <p><a href="#" class="link-default">Conditions générales de vente</a></p>
+                    <p><a href="#" class="link-default">Données et confidentialité</a></p>
+
+                </div>
+                <div id="ourLodging" class="foot-item">
+                    <h4>Nos hébergements</h4>
+
+                    <p><a href="#" class="link-default">Charte qualité</a></p>
+                    <p><a href="#" class="link-default">Soumettre votre hôtel</a></p>
+
+                </div>
+                <div id="help" class="foot-item">
+                    <h4>Assistance</h4>
+
+                    <p><a href="#" class="link-default">Centre d'aide</a></p>
+                    <p><a href="#" class="link-default">Nous contacter</a></p>
+
+                </div>
+
             </div>
-            <div id="ourLodging">
-                <h4></h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div id="help">
-                <h4></h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+
+
         </footer>
 
 
