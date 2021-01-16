@@ -10,22 +10,26 @@ h1 {
 h2 {
     font-size: 1.3rem;
 }
-h3 {
+strong {
     font-weight: bolder;
-    font-size: 1em;
+    font-size: 1.1em;
+}
+input {
+    font-weight: bolder;
+    font-size: 1.1em;
 }
 h4 {
     font-weight: bolder;
     font-size: 1.2em;
 }
-strong {
-    font-size: bolder;
-}
+
 body {
     margin : 0px;
 }
 .main {
     max-width: 1750px;
+    padding-right: -20px;
+    padding-left: 20px;
     margin: auto;
 }
 .bg-gray {
@@ -132,9 +136,6 @@ nav {
 .logo {
     display: flex;
     align-self:left;
-    width: 10%;
-
-
 }
 .space {
     flex: 99;
@@ -177,8 +178,8 @@ nav {
     display: flex;
     background-color: #F2F2F2;
     justify-content: space-between;
-    height: 55px;
-    width: 500px;
+    height: 40px;
+    width: 25%;
     border: 3px solid #F2F2F2;
     border-radius: 20px;
 }
@@ -224,6 +225,7 @@ nav {
     flex-wrap: wrap;
     max-width: 60%;
     align-items: center;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 .f-item {
@@ -286,6 +288,7 @@ nav {
 #lodg-pop {
     justify-content: space-between;
     flex-wrap: wrap-reverse;
+    margin-bottom: 40px;
 }
 .row-lodg {
     flex-wrap: wrap;
@@ -296,31 +299,30 @@ nav {
 
 #lodging {
     padding:20px;
-    width: 65%;
+    width: 62%;
     min-width: fit-content;
-    /* margin: 15px; */
 }
 .it-lodg {
-
     align-items: space-between;
 }
 .c-lodg {
     width: 30%; /* for display 3 cards on min 1280px larg screen*/
-    height: 20%;
-    /* margin: 20px; */
+    
     padding: 5px;
     padding-bottom: 10px;
 
-    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21); 
-    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 0px 0px 30px 5px #68686838; 
+    box-shadow: 0px 0px 30px 5px #68686838;
 }
 .c-lodg-text {
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
+    justify-items: flex-end;
 }
 .c-lodg-img {
     background-size: contain;
-    height: 145px;
+    height: 120px;
     padding: 5px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -334,30 +336,41 @@ nav {
     color: #0065FC;
 }
 
-
-
 /* Horizontal cards */
 
 /* POPULAR */
 #popular {
     padding:20px;
-    width: fit-content;
+    width: 28%;
     min-width: fit-content;
-    min-width: fit-content;
-    /* margin: 15px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.it-pop {
+    height: 100%;
 }
 .c-pop {
-    min-width: 300px;
-    margin: 25px;
+    width: 90%;
+    height: 25%;
+    margin: auto;
     padding: 5px;
     padding-bottom: 10px;
 
-    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21); 
-    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21);
+    background-size: contain;
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+
+    -webkit-box-shadow: 0px 0px 30px 5px #68686838; 
+    box-shadow: 0px 0px 30px 5px #68686838;
 }
 .c-pop-text {
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 15px;
 }
 .c-pop-img {
     background-size: contain;
@@ -366,16 +379,6 @@ nav {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
-.c-pop {
-    background-size: contain;
-    height: 145px;
-    padding: 5px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    
-}
-
-
 
 .bot > .rating{
     margin-left: 0px;
@@ -396,29 +399,27 @@ nav {
     padding: 0px;
 }
 #containerAct1 {
-    margin-left: -20px;
-    min-width: 640px; /* 640 = 1280/2 */
+    width:50%; /* 640 = 1280/2 */
 }
 
 #containerAct2 {
-    margin-right: -25px;
-    min-width: 640px;
+    width:50%;
+   
 }
 
 .c-act {
-    width: 75%; /* for display 3 cards on min 1280px larg screen*/
+    width: 90%; /* for display 3 cards on min 1280px larg screen*/
     height: 100%;
-    margin: 20px;
+    margin-top: 20px;
     padding: 5px;
     padding-bottom: 10px;
     /* margin: 15px; */
 
-    -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21); 
-    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 0px 0px 30px 5px #68686838; 
+    box-shadow: 0px 0px 30px 5px #68686838;
 }
 .c-act-text {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 15px;
 }
 .c-act-img {
     background-size: contain;
@@ -430,7 +431,7 @@ nav {
 
 .container {
     width: 50%;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .act-col {
     width: 50%;
@@ -443,13 +444,11 @@ nav {
 
 /* Footer */
 footer {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 #footer-container {
-    width: 75%;
+    width: 70%;
     padding: 40px;
-    /* padding-top:35px;
-    padding-bottom:40px; */
 }
 .link-default {
     text-decoration: none;
@@ -502,7 +501,6 @@ footer {
     .main {
         max-width: 1280px;
         width: 100%;
-        /* min-width: 550px; */
         margin: auto;
     }
 
@@ -601,22 +599,23 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
 
-        /* width: 66%; */
+        width: 90%; 
     }
     #activities-section {
         display: flex;
         flex-direction: column;
+        width: 95%;
         align-items: center;
     }
     #containerAct1 {
-       width:66%;   /* 640 = 1280/2  */
+       width:90%;   /* 640 = 1280/2  */
        height: 450px;
        margin: auto;
        flex-wrap: nowrap;
     }
     
     #containerAct2 {
-        width:66%;
+        width:90%;
         height: 450px;
         margin: auto;
     }
@@ -633,15 +632,30 @@ footer {
 
 @media screen and (max-width: 640px) {  /* mobile */
 
+/* Images cards populaire plus hautes
+    Margin intersection en moins
+    revoir width cartes activités
+
+*/
+
+
+
+* {
+    font-size: 0.99em;
+}
   .main {
         display: flex;
         flex-direction: column;
         margin: 0px;
         padding: 0px;
     }
-    #search {
+    #search-city {
        align-items: flex-start;
        padding: 10px;
+    }
+    #search-bar {
+        align-self: center;
+        width: 90%;
     }
     #filter {
        
