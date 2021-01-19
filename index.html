@@ -10,20 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d0481fe509.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="/ressources/style/style.css" /> -->
 </head>
 
 <body>
     <div class="main">
-
-
-         <!-- TODO ::
-        
-            Image populaire au coeur de l'eau pas le même width
-        
-        
-        -->
-
 
         <header>
             <nav>
@@ -36,25 +26,29 @@
                 <div class="nav-item" id="sign-in"><a href="#" class="nav-link"><strong
                             class="color-blue">S'inscrire</strong></a></div>
             </nav>
-
         </header>
 
+
+
         <section id="search">
+
             <div id="search-city">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En pleine ville ou en pleine nature</p>
                 <div id="search-bar">
                     <div class="local-icon flex"><i class="fas fa-map-marker-alt item-search"></i></div>
                     <input type="search" class="item-search" name="city" id="city" value="Marseille, France">
-                    <button type="submit" class="item-search" id="search-input">Rechercher</button>
+                    <button type="submit" class="item-search" id="search-input">
+                        <span id="text-btn-search">Rechercher</span>
+                        <span id="glass-btn-search"><i class="fas fa-search"></i></span>
+                    </button>
+                    <button type="submit" class="item-search" id="glass-icon" style="display: none;"><i
+                            class="fas fa-child f-i"></i></button>
                 </div>
-
             </div>
 
             <div id="filter" class="flex">
-
                 <strong>Filtres</strong> <!-- Title up and icons after on mobile view-->
-
                 <div class="flex flex-wrap" id="group-filter">
                     <div class="f-item flex">
                         <div class="f-icon flex"><i class="fas fa-money-bill-wave f-i"></i></div>
@@ -77,30 +71,29 @@
                     </div>
                 </div>
             </div>
+
             <div class="flex mbot">
                 <div class="flex" id="info"><i class="fas fa-info f-i"></i></div>
                 <span class="flex" id="info-text">Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
+
         </section>
 
 
 
 
-        <div id="allContent" class="flex col">
 
+        <div id="allContent" class="flex col">
             <section id="lodg-pop" class="flex justify-around">
 
                 <div id="lodging" class="bg-gray rounded-border">
+
                     <div id="title-lodg">
                         <h2>Hébergements à Marseille</h2>
                     </div>
-
                     <div class="it-lodg">
-                        <!-- LODGING-->
+
                         <div class="flex row-lodg mbot">
-                            <!-- 3 lodging row-->
-
-
                             <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-marcus"></div>
                                 <div class="c-lodg-text">
@@ -115,7 +108,6 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-
                             <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-fred"></div>
                                 <div class="c-lodg-text">
@@ -130,8 +122,6 @@
                                     <span class="fa fa-star checked"></span>
                                 </div>
                             </div>
-
-
                             <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-reisetopia"></div>
                                 <div class="c-lodg-text">
@@ -146,14 +136,10 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-
-
                         </div>
                         <!--./row-->
 
                         <div class="flex row-lodg mbot">
-                            <!-- 3 lodging row-->
-
                             <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-annie">
                                 </div>
@@ -169,7 +155,6 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-
                             <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-nicate"></div>
                                 <div class="c-lodg-text">
@@ -184,7 +169,6 @@
                                     <span class="fa fa-star"></span>
                                 </div>
                             </div>
-
                             <div class="c-lodg rounded-border mbot bg-white flex col">
                                 <div class="c-lodg-img bg-img" id="img-amina"></div>
                                 <div class="c-lodg-text">
@@ -199,29 +183,23 @@
                                     <span class="fa fa-star checked"></span>
                                 </div>
                             </div>
-
-
                         </div>
-                    </div>
+                        <!--./row-->
 
+                    </div>
                     <h2>Afficher plus</h2>
 
                 </div>
+
 
 
                 <div id="popular" class="bg-gray rounded-border">
                     <div id="title-pop">
                         <h2 class="flex justify-between">Les plus populaires<i class="fas fa-chart-line"></i></h2>
                     </div>
-
-
-                    <!-- POPULAR-->
                     <div class="it-pop flex col">
-                        <!-- pop cols-->
-
-
                         <div class="c-pop mbot rounded-border bg-white flex">
-                            <div class="c-pop-img" id="img-emilie"></div>
+                            <div class="c-pop-img bg-img" id="img-emilie"></div>
                             <div class="c-pop-text flex col justify-between">
                                 <div class="top flex col">
                                     <strong>Hôtel Le soleil du matin<br></strong>
@@ -238,9 +216,8 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="c-pop mbot rounded-border bg-white flex">
-                            <div class="c-pop-img" id="img-aw"></div>
+                            <div class="c-pop-img bg-img" id="img-aw"></div>
                             <div class="c-pop-text flex col justify-between">
                                 <div class="top flex col">
                                     <strong>Au coeur de l'eau Chambres d'hôtes<br></strong>
@@ -257,9 +234,8 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="c-pop mbot rounded-border bg-white flex">
-                            <div class="c-pop-img" id="img-febiran-sj"></div>
+                            <div class="c-pop-img bg-img" id="img-febiran-sj"></div>
                             <div class="c-pop-text flex col justify-between">
                                 <div class="top flex col">
                                     <strong>Hôtel Tout bleu et Blanc<br></strong>
@@ -276,34 +252,27 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
+
+
+
 
             </section>
 
             <section id="activities-section" class="flex col flex-wrap justify-around">
                 <h2>Activités à Marseilles</h2>
-                <!-- MAIN ROW !! DISPLAY COL ON 1270px larg screen  -->
                 <div id="activities" class="flex flex-wrap justify-between">
-                    <!-- md-colums-->
 
-
-                    <!--CONTAINER 1 WITH 3 ITEM INSIDE-->
                     <div class="flex" id="containerAct1">
-
                         <div class="flex col container">
                             <!-- CONTAINER WITH LARGE ITEM-->
-
                             <div class="c-act rounded-border bg-white flex col">
                                 <div class="c-act-img bg-img" id="img-reno"></div>
                                 <div class="c-act-text flex col">
                                     <strong>Vieux Port</strong>
                                 </div>
                             </div>
-
                         </div>
 
                         <div class="flex col container">
@@ -314,15 +283,14 @@
                                     <strong>Fort de Pomègues</strong>
                                 </div>
                             </div>
-
                             <div class="c-act rounded-border bg-white flex col">
                                 <div class="c-act-img bg-img" id="img-kevin"></div>
                                 <div class="c-act-text flex col">
                                     <strong>Îles du Frioul</strong>
                                 </div>
                             </div>
-
                         </div>
+
                     </div>
 
                     <!--CONTAINER 2 WITH 3 ITEM INSIDE-->
@@ -346,57 +314,45 @@
                                     <strong>Notre-Dame-de-la-Garde</strong>
                                 </div>
                             </div>
-
                             <div class="c-act rounded-border bg-white flex col">
                                 <div class="c-act-img bg-img" id="img-lena"></div>
                                 <div class="c-act-text flex col">
                                     <strong>Parc Longchamp</strong>
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
 
                 </div>
             </section>
-
         </div>
     </div>
-        <footer class="bg-gray">
 
-            <div id="footer-container" class="flex justify-between flex-wrap">
-                <!-- flex col on mobile-->
-                <div id="about" class="foot-item">
-                    <h4>A propos</h4>
 
-                    <p><a href="#foot" class="link-default">Fonctionnement du site</a></p>
-                    <p><a href="#" class="link-default">Conditions générales de vente</a></p>
-                    <p><a href="#" class="link-default">Données et confidentialité</a></p>
+    <footer class="bg-gray">
 
-                </div>
-                <div id="ourLodging" class="foot-item">
-                    <h4>Nos hébergements</h4>
-
-                    <p><a href="#" class="link-default">Charte qualité</a></p>
-                    <p><a href="#" class="link-default">Soumettre votre hôtel</a></p>
-
-                </div>
-                <div id="help" class="foot-item">
-                    <h4>Assistance</h4>
-
-                    <p><a href="#" class="link-default">Centre d'aide</a></p>
-                    <p><a href="#" class="link-default">Nous contacter</a></p>
-
-                </div>
-
+        <div id="footer-container" class="flex justify-between flex-wrap">
+            <div id="about" class="foot-item">
+                <h4>A propos</h4>
+                <p><a href="#foot" class="link-default">Fonctionnement du site</a></p>
+                <p><a href="#" class="link-default">Conditions générales de vente</a></p>
+                <p><a href="#" class="link-default">Données et confidentialité</a></p>
             </div>
+            <div id="ourLodging" class="foot-item">
+                <h4>Nos hébergements</h4>
+                <p><a href="#" class="link-default">Charte qualité</a></p>
+                <p><a href="#" class="link-default">Soumettre votre hôtel</a></p>
+            </div>
+            <div id="help" class="foot-item">
+                <h4>Assistance</h4>
+                <p><a href="#" class="link-default">Centre d'aide</a></p>
+                <p><a href="#" class="link-default">Nous contacter</a></p>
+            </div>
+        </div>
 
+    </footer>
 
-        </footer>
-
-
-    
 </body>
 
 </html>
