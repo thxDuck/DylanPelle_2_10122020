@@ -27,7 +27,6 @@ body {
 }
 .main {
     max-width: 1750px;
-    padding-right: -20px;
     padding-left: 20px;
     margin: auto;
 }
@@ -165,7 +164,6 @@ nav {
 }
 .logo {
     display: flex;
-    align-self:left;
 }
 .space {
     flex: 99;
@@ -209,7 +207,7 @@ nav {
     height: 40px;
     width: 25%;
 
-    background-color: #F2F2F2;
+    background-color: #F2F2F1;
     border: 3px solid #F2F2F2;
     border-radius: 20px;
 }
@@ -286,6 +284,10 @@ nav {
     border: 1px solid #aaaaaa;
     border-radius: 40px;
 }
+.f-item:hover {
+    border: 1px solid #0065FC;
+    background-color: #DEEBFF;
+}
 .f-icon {
     justify-content: center;
     align-items: center;
@@ -345,15 +347,12 @@ nav {
     width: 62%;
     min-width: fit-content;
 }
-.it-lodg {
-    align-items: space-between;
-}
+
 .c-lodg {
     width: 30%;
     padding: 5px;
     padding-bottom: 10px;
 
-    -webkit-box-shadow: 0px 0px 30px 5px #68686838; 
     box-shadow: 0px 0px 30px 5px #68686838;
 }
 .c-lodg-text {
@@ -411,7 +410,6 @@ nav {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 
-    -webkit-box-shadow: 0px 0px 30px 5px #68686838; 
     box-shadow: 0px 0px 30px 5px #68686838;
 }
 .c-pop-text {
@@ -468,7 +466,6 @@ nav {
     padding: 5px;
     padding-bottom: 10px;
 
-    -webkit-box-shadow: 0px 0px 30px 5px #68686838; 
     box-shadow: 0px 0px 30px 5px #68686838;
 }
 .c-act-text {
@@ -550,8 +547,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        max-width: auto;
     }
     nav {
         display: flex;

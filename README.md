@@ -1,9 +1,9 @@
 # DylanPelle_2_10122020
 OpenClassroom, Front-end developper courses, project 2 : 
 
-## Turn a mockup into a website !
+**Turn a mockup into a website !**
 <br/>
----
+
 
 # Technologies and softwares environement
 
@@ -11,7 +11,7 @@ OpenClassroom, Front-end developper courses, project 2 :
 - CSS 3
 
 - Linux (Fedora 33)
-- Visual Studio Code
+- Visual Studio Code -> VSCodium
 - Chromium
 - Firefox
 
@@ -26,18 +26,14 @@ OpenClassroom, Front-end developper courses, project 2 :
 - version the code 
 
 
-## Tips 
-
-- For the border -> 
-
 
 ## Time passed
 
-- 10/12/2020 --> 4h, have structured HTML, search bar created
+- 35 H
 
----
----
+
 <br/><br/>
+---
 
 ### Author 
 Dylan Pellé
